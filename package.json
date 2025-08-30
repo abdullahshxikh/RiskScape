@@ -1,0 +1,19 @@
+{
+  "name": "riskscape",
+  "version": "1.0.0",
+  "description": "Interactive Multi-Factor Risk Simulator in the Browser",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:wasm && npm run build:web",
+    "build:wasm": "cd engine && wasm-pack build --target web --out-dir pkg --release",
+    "build:web": "cd web && npm run build",
+    "dev": "npm run build:wasm && cd web && npm run dev",
+    "clean": "rm -rf node_modules web/node_modules engine/target engine/pkg web/.next web/out"
+  },
+  "workspaces": [
+    "web"
+  ],
+  "keywords": ["risk", "simulation", "finance", "wasm", "webassembly"],
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,160 @@
+# ======================================
+# RiskScape - Comprehensive .gitignore
+# Optimized for Vercel/Netlify deployment
+# ======================================
+
+# Dependencies & Package Managers
+# --------------------------------
+node_modules/
+.pnpm-debug.log*
+.pnpm-store/
+.yarn-integrity
+.npm/
+.yarn/
+
+# Next.js & Build Outputs
+# -----------------------
+.next/
+out/
+build/
+dist/
+.vercel/
+.netlify/
+
+# Rust & WebAssembly
+# ------------------
+target/
+Cargo.lock
+pkg/
+wasm-pack.log
+**/*.rs.bk
+
+# Testing & Coverage
+# ------------------
+coverage/
+*.lcov
+.nyc_output
+.coverage/
+coverage.json
+coverage.xml
+
+# Caching & Temporary Files
+# -------------------------
+.cache/
+.parcel-cache/
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.eslintcache
+*.tsbuildinfo
+
+# Logs
+# ----
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime Data
+# ------------
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Environment Variables
+# ---------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.build
+.env.production
+!.env.example
+
+# IDEs & Editors
+# --------------
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# OS Generated Files
+# ------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+
+# Package Files
+# -------------
+*.tgz
+*.tar.gz
+jspm_packages/
+
+# Miscellaneous
+# -------------
+.tmp/
+temp/
+tmp/
+.lock-wscript
+.book
+storybook-static/
+.vercel
+.netlify/
+
+# Legacy/Deprecated
+# -----------------
+bower_components/
+.grunt/
+lib-cov/
+public/
+.next
+.nuxt
+.out
+.storybook-out
+
